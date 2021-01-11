@@ -43,22 +43,24 @@ Yes
 
 * `std::getchar()`
 
-No, relies on IO side-effects
+No, relies on IO side effects.
 
 * ```
   bool f() { 
       std::cout << "Hello!" << std::endl;
       return true; 
-  }```
+  }
+  ```
 
-No, relies on IO side effects
+No, relies on IO side effects.
 
-* ```int f(int x)
-{
-    static int y = 0;
-    y += x;
-    return y;
-}```
+* ```
+  int f(int x) {
+      static int y = 0;
+      y += x;
+      return y;
+  }
+  ```
 
 No, relies on persistent state.
 

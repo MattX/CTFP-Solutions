@@ -8,7 +8,7 @@
 
 ![](q1.jpg)
 
-## 02
+## 2
 
 > What kind of order is this?
 >  * A set of sets with the inclusion relation: A is included in B if every element of A is also an element of B.
@@ -19,7 +19,7 @@ This is a partial order.
 
 I don't know much about C++, but I think this is also a partial order.
 
-## 03
+## 3
 
 > Considering that Bool is a set of two values True and False, show that it forms two (set-theoretical) monoids with respect to, respectively, operator && (AND) and || (OR).
 
@@ -39,7 +39,7 @@ Similarly, `Bool` is a monoid with respect to `||` because
  * `||` is associative, i.e. `a || (b || c) == (a || b) || c`,
  * `false` is a neutral element, i.e. `a || false == false || a == a`.
 
-## 04
+## 4
 
 > Represent the Bool monoid with the AND operator as a category: List the morphisms and their rules of composition.
 
@@ -49,7 +49,7 @@ The morphisms are:
 
 All compositions are obvious.
  
-## 05
+## 5
 
 > Represent addition modulo 3 as a monoid category.
 

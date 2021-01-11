@@ -26,9 +26,10 @@ optional<double> safe_root(double x) {
 
 * The identity morphism from _A_ to _A_ maps `a` to `optional<A>{a}`;
 * Given two morphisms _f: A → B_ and _g: B → C_,
-   ```(g ∘ f)(x) = g(y)            if f(x) = optional<B>{y}
-                   optional<C>{}   otherwise
-   ```
+  ```
+  (g ∘ f)(x) = g(y)            if f(x) == optional<B>{y}
+               optional<C>{}   otherwise
+  ```
    
   (I don't really want to write this out in C++).
 
