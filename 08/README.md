@@ -2,7 +2,7 @@
 
 > Show that the data type:
 
-> ```haskell
+```haskell
 data Pair a b = Pair a b
 ```
 
@@ -47,7 +47,7 @@ second g (Pair a b) = Pair a (g b) = bimap id g (Pair a b)
 
 > Show the isomorphism between the standard definition of Maybe and this desugaring:
 
-> ```haskell
+```haskell
 type Maybe' a = Either (Const () a) (Identity a)
 ```
 
@@ -71,7 +71,7 @@ which are obviously inverses of each other.
 
 > Let’s try another data structure. I call it a `PreList` because it’s a precursor to a `List`. It replaces recursion with a type parameter `b`.
 
-> ```haskell
+```haskell
 data PreList a b = Nil | Cons a b
 ```
 
@@ -102,7 +102,7 @@ bimap (f . f') (g . g') (Cons a b) = Cons (f (f' a)) (g (g' b))
 
 > Show that the following data types define bifunctors in a and b:
 
-> ```haskell
+```haskell
 data K2 c a b = K2 c
 data Fst a b = Fst a
 data Snd a b = Snd b

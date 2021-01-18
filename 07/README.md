@@ -77,6 +77,7 @@ fmap (g . f) Nil = Nil
                  = fmap f Nil
                  = fmap g (fmap f Nil)
                  = (fmap g . fmap f) Nil
+
 fmap (g . f) (Cons x t) = Cons (g (f x)) (fmap (g . f) t)
                         = Cons (g (f x)) (fmap g (fmap f t))  -- by recurrence hypothesis
                         = fmap g (Cons (f x) (fmap f t))
